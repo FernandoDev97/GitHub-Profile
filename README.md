@@ -24,11 +24,14 @@ Você poderá ver detalhes como: Sua foto de perfil, nome e sobrenome, localiza�
 
 ## Ao clicar em cima de "Repositórios" 
 
-Você será direcionado a uma nova interface, por sua vez, exibindo novas informações na tela.
 
 <div align="start">
 <img src="https://user-images.githubusercontent.com/85572838/138744505-0e05d35f-f3fb-447a-b1f5-cfbc03422f03.png" width="400px" />
 </div>
+
+#
+
+#### Você será direcionado a uma nova interface, por sua vez, exibindo novas informações na tela.
 
 #
 
@@ -40,11 +43,13 @@ Ao lado, serão listados os repositórios do desenvolvedor, em cada repositório
 
 ## Ao clicar em cima de "Seguidores"
 
-Você será direcionado a uma nova interface, por sua vez, exibindo novas informações na tela.
-
 <div align="start">
 <img src="https://user-images.githubusercontent.com/85572838/138747304-7bb85c2b-5de9-4b36-8593-10cc4775557a.png" width="400px" />
 </div>
+
+#
+
+#### Você será direcionado a uma nova interface, por sua vez, exibindo novas informações na tela.
 
 #
 
