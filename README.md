@@ -63,7 +63,7 @@ Tenho como objetivo, continuar trabalhando neste projeto, inserindo novas funcio
 
 Este projeto está sendo desenvolvido com muita dedicação, tendo como maior recurso o Google como fonte de pesquisa. 
 
-Todos os dados manipulados são disponibilizados pela API do [GitHub](https://docs.github.com/pt/rest).
+Todos os dados manipulados foram coletados pela API disponibilizada em [GitHub](https://docs.github.com/pt/rest).
 
 Foram adicionadas três bibliotecas ao projeto: Styled-Components, React Icons e Axios.
 
