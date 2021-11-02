@@ -6,9 +6,9 @@ import UserContainer from '../components/home/userContainer';
 import UserPicture from '../components/home/userPicture';
 import UserDetails from '../components/home/userDetails';
 import UserNumbers from '../components/home/userNumbers';
-
 import { context } from '../context';
-import Header from '../components/header';
+import ImageArea from '../components/home/imageArea';
+
 
 export default function Home() {
     const ctx = useContext(context);
@@ -16,20 +16,19 @@ export default function Home() {
 
     return (
         <Container>
-            <Header/>
             <Main username={query.get('username')} />
             {ctx.userData?.name ?
             <UserContainer>
                 <React.Fragment>
                     <UserPicture url={ctx.userData?.avatar_url} />
                     <UserDetails 
-                    name={ctx.userData?.name} username={ctx.userData?.login} 
+                    name={ctx.userData?.name} login={ctx.userData?.login} 
                     bio={ctx.userData?.bio} location={ctx.userData?.location} 
                     company={ctx.userData?.company} blog={ctx.userData?.blog} />
                     <UserNumbers repos={ctx.userData?.public_repos} followers={ctx.userData?.followers} following={ctx.userData?.following} />
                 </React.Fragment>
             </UserContainer>
-             : undefined }
+             : <ImageArea/> }
         </Container>
     );
 }

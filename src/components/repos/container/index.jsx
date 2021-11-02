@@ -1,9 +1,9 @@
-import { RepoContainer } from './styles';
+import { Container } from './styles';
 
-const RepoContainer = props => (
+const Container = props => (
     <Container>
         {props.children}
     </Container>
 );
 
-export default RepoContainer;
+export default Container;

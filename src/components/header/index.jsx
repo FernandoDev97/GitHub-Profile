@@ -1,13 +1,13 @@
 import { 
     HeaderContainer,
-    HeaderTitle, 
-    HeaderSubtitle
+    HeaderLogo, 
  } from './styles';
 
-const Header = props => (
+import Logo from '../../assets/img/logo.png'
+
+const Header = () => (
     <HeaderContainer>
-        <HeaderTitle>GitHub Profile</HeaderTitle>
-        <HeaderSubtitle>Site para você encontrar programadores, de uma forma rápida e prática!</HeaderSubtitle>
+        <HeaderLogo src={Logo}/>
     </HeaderContainer>
 );
 

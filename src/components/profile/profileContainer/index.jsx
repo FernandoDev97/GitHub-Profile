@@ -1,11 +1,13 @@
 import {
     Content,
-    Section
+    Section,
+    BackgroundContent
 } from './styles';
 
 const Profile = props => (
     <Section>
         <Content>
+            <BackgroundContent/>
             {props.children}
         </Content>
     </Section>

@@ -15,18 +15,18 @@ const Numbers = props => {
     return (
         <Container>
             <NumberContainer onClick={() => handleOnClick('/repos')}>
-                <Qtde>{props?.repos}</Qtde>
                 <Subtitle>Repositórios</Subtitle>
+                <Qtde>{props?.repos}</Qtde>
             </NumberContainer>
 
             <NumberContainer onClick={() => handleOnClick('/followers')}>
-                <Qtde>{props?.followers}</Qtde>
                 <Subtitle>Seguidores</Subtitle>
+                <Qtde>{props?.followers}</Qtde>
             </NumberContainer>
 
             <NumberContainer>
-                <Qtde>{props?.following}</Qtde>
                 <Subtitle>Seguindo</Subtitle>
+                <Qtde>{props?.following}</Qtde>
             </NumberContainer>
         </Container>
     );

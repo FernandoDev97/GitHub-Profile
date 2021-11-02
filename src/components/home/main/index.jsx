@@ -1,12 +1,14 @@
 import { useState, useContext, useEffect } from 'react';
-import { FiSearch } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-
+import Img from '../../../assets/img/logo.png'
 import {
     MainSection,
     MainTitle,
     MainInputContainer,
     MainInput,
+    Button,
+    Image,
+    Subtitle
 } from './styles';
 
 import client from '../../../services/client';
@@ -22,7 +24,7 @@ const Main = props => {
                 const response = await client.get(`/${props.username}`);
                 const repos = await client.get(`/${props.username}/repos`);
                 const followers = await client.get(`/${props.username}/followers`);
- 
+
                 ctx.setUserData(response.data);
                 ctx.setUserRepos(repos.data);
                 ctx.setUserFollowers(followers.data);
@@ -34,11 +36,13 @@ const Main = props => {
 
     return (
         <MainSection>
-            <MainTitle>Digite o nome do desenvolvedor abaixo</MainTitle>
+            <Image src={Img}/>
+            <MainTitle>Buscar Usuário</MainTitle>
+            <Subtitle>Digite aqui o login do usuário que deseja encontrar</Subtitle>
             <MainInputContainer>
                 <MainInput type="text" value={searchValue} onChange={e => setSearchValue(e.target.value)} />
                 <Link to={`/?username=${searchValue}`}>
-                    <FiSearch size={15} />
+                    <Button>Pesquisar</Button>
                 </Link>
             </MainInputContainer>
         </MainSection>

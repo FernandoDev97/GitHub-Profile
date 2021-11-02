@@ -1,12 +1,9 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-    width: 65%;
-    height: 70vh;
-    background: rgba(255,255,255,.1);
+    width: 100%;
+    height: 95%;
     border-radius: 10px;
-    border-bottom: 10px solid #FF7A00;
-    margin-left: 9%;
 
     @media (max-width: 430px) {
         width: 300px;
@@ -14,10 +11,10 @@ export const Section = styled.section`
 `
 
 export const Title = styled.h1`
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 2.0rem;
+    font-style: italic;
     margin-top: 10px;
-    color: #E5E5E5;
+    color: #000;
     width: 100%;
     text-align: center;
     height: 40px;
@@ -32,32 +29,33 @@ export const ListOfReposContainer = styled.div`
 
 export const Repo = styled.div`
     width: 100%;
-    height: 100px;
-    background: rgba(0,0,0,.4);
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
     border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
     cursor: pointer;
-    transition: all ease 0.2s;
+    transition: all ease 0.1s;
 
     &:hover {
-        background-color:rgba(0,0,0,.3);
+        background-color:rgba(0,0,0, .0);
     }
 `
 export const RepoName = styled.h1 `
-    font-size: 18px;
+    font-size: 26px;
     width: 100%;
     overflow: hidden;
-    color: #E5E5E5;
+    color: #111;
 `
 
 export const RepoDescription = styled.p`
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
-    color: #999;
-    width: 100%;
+    color: #333;
+    width: 80%;
     height: 30px;
-    overflow: hidden;
     line-height: 1.3;
     margin-top: 10px;
 `

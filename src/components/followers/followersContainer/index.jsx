@@ -1,5 +1,4 @@
 import React from "react";
-import { useHistory } from "react-router";
 
 import {
     Section,
@@ -11,17 +10,15 @@ import {
 } from './styles'
 
 const FollowersContainer = props => {
-    const history = useHistory();
-    const handleOnClick = route => history.push(route);
 
     return (
         <Section>
             <Title>Seguidores de {(props.name)?.split(' ')[0]}</Title>
             <ListFollowersContainer>
                 {(props?.followers).map(follow => (
-                <BoxFollow key={follow?.id}>
+                <BoxFollow onClick={() => window.open(follow?.html_url)} key={follow?.id}>
                     <Picture src={follow?.avatar_url} alt="/username"/>
-                    <Name>{follow?.login}</Name>
+                    <Name>@{follow?.login}</Name>
                 </BoxFollow>
                 ))}
             </ListFollowersContainer>

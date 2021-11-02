@@ -2,43 +2,40 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
-    height: 15%;
+    height: 120px;
     padding: 0px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 11%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
 `
 
 export const NumberContainer = styled.div`
-    width: 25%;
-    height: 65%;
+    width: 100%;
+    height: 30px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 10px;
+    padding: 18px;
+    cursor: pointer;
 
     &:hover {
-        cursor: pointer;
-        background: rgba(0,0,0,.3);
+        background: rgba(0,0,0,.1);
         transition: .2s ease;
-        border-radius: 10px;
+        border-radius: 2px;
     }
 `
 
 export const Qtde = styled.h1`
-    text-align: center;
-    font-size: 1.6rem;
-    color: #E5E5E5;
+    font-size: 20px;
+    color: #222;
     margin: 0;
+    text-align: justify;
 `     
 
-
 export const Subtitle = styled.h2`    
-    font-size: 14px;
-    text-align: center;
-    color: #999;
+    font-size: 16px;
+    color: #222;
     margin: 0;
 `
 
